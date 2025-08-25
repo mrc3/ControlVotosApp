@@ -1,16 +1,16 @@
 apply plugin: "com.android.application"
 apply plugin: "org.jetbrains.kotlin.android"
-apply plugin: "com.facebook.react"  // Esta línea debe estar
+apply plugin: "com.facebook.react"  // Esta línea debe estar aquí
 apply plugin: "com.google.gms.google-services"  // Firebase (Google Services)
 
 android {
     namespace "com.controlvotosapp"
-    compileSdkVersion = 33 // Usa una versión estable soportada, como 33
+    compileSdkVersion 36  // Asegúrate de que esté configurado correctamente
 
     defaultConfig {
         applicationId "com.controlvotosapp"
         minSdkVersion 24
-        targetSdkVersion 33 // Usa la misma versión que compileSdkVersion
+        targetSdkVersion 36
         versionCode 1
         versionName "1.0"
     }
@@ -45,4 +45,10 @@ dependencies {
     } else {
         implementation "io.github.react-native-community:jsc-android:2026004.+"
     }
+
+    // Asegúrate de que estas dependencias estén presentes
+    implementation platform('com.google.firebase:firebase-bom:34.1.0')  // Firebase BOM (Bill of Materials)
+    implementation "com.google.firebase:firebase-analytics"  // Firebase Analytics
+    implementation "com.google.firebase:firebase-auth"  // Firebase Authentication
+    implementation "com.google.firebase:firebase-firestore"  // Firebase Firestore
 }
