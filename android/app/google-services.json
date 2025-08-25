@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "677746295464",
+    "project_id": "proyecto-dirigentes",
+    "storage_bucket": "proyecto-dirigentes.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677746295464:android:6f939e7de912013ed4789d",
+        "android_client_info": {
+          "package_name": "com.controlvotosapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnJjoDZi944ySxLv2rMmXpd3CwKG4G86Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
